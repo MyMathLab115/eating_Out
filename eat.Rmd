@@ -44,14 +44,16 @@ mydata <- na.omit(mydata)
 
 The variables of the problem is cat~num, in order to determine which ethnicity eats out more. The cat represents the race and num represents the amount.
 
+
 # Discriptive Results
+
 
 The graph shows what race eats out more than the other.
 
 ## graphical results
 
-The results is explained on the barchart.
 
+The results is explained on the barchart.
 
 
 ```{r}
@@ -71,6 +73,8 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The numerical discriptive results shows that the frequency of whites ethnicity, eats out more than blacks and other ethnicity. 
+
 ### Inferential results
 
 ```{r}
@@ -80,7 +84,7 @@ fisherXY(mydata$race,mydata$eatout,printAll=T)
 ```
 
 
-chi square test shows the p value 0.0008179, the number is so small, we reject the null hypothesis. The fisher exact test shows the p value is 0.001208 is also too small, so we reject the null hypothesis. There is a difference in eating out with whites and blacks. whites eat out more than blacks, there's no difference in other ethnicity.
+Chi square test shows the p value 0.0008179, the number is so small, we reject the null hypothesis. The fisher exact test shows the p value is 0.001208 is also too small, so we reject the null hypothesis. There is a difference in eating out with whites and blacks. whites eat out more than blacks, there's no difference in other ethnicity.
 The fisher exact test shows the p value is 0.0008179
 The fisher xy test shows that the p value is 0.2815
 
